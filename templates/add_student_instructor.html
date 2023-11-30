@@ -26,18 +26,16 @@
 
     <div class=" container col-lg-8 ">
 
-            <div class="col-md-12">
-              <label for="country" class="form-label">Choose Students</label>
-              <select class="form-select" id="country" required="">
-                <option value="">Choose...</option>
-                <option>Student1</option>
-                <option>Student2</option>
-
-              </select>
-              <div class="invalid-feedback">
-                Please select a valid country.
-              </div>
+        <div class="col-md-12">
+            <div class="input select">
+                <label for="SiteSite">Choose Students:</label>
+                <input type="hidden" name="data[Site][Site]" value="" id="SiteSite">
+            
+            <div class="checkbox"><input type="checkbox" name="data[Site][Site][]" value="1" id="SiteSite1"><label for="SiteSite1"> Student 1</label></div>
+            <div class="checkbox"><input type="checkbox" name="data[Site][Site][]" value="2" id="SiteSite2"><label for="SiteSite2"> Student 2</label></div>
+            
             </div>
+        </div>
 
             <div class="text-center">
               <button class="w-50 btn btn-primary btn-lg mt-2 text-center" style="background-color: #1F408D; border-color: white;" type="submit">Add Student</button>
